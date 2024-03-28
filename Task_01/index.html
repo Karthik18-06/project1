@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+    <title>SINGLE PAGE WEB APPLICATION USING JAVASCRIPT</title>
+</head>
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg">
+              <a class="navbar-brand">NineStars</a>
+              <i class="fa-solid fa-cart-shopping cartshop" data-bs-toggle="dropdown"></i>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+                
+              </button>
+              
+               <div class="collapse navbar-collapse" id="mynavbar">
+                <ul class="navbar-nav mx-auto">
+                  <li class="nav-item">
+                    <a class="nav-link nav-link-ltr active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nav-link-ltr" href="#about">About Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nav-link-ltr" href="#webbs">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nav-link-ltr" href="#team">Team</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nav-link-ltr" href="#cardhover">Services</a>
+                  </li>
+                  <!-- <li class="nav-item">
+                    <a class="nav-link nav-link-ltr" href="#">Drop Down  <i class="fa-solid fa-caret-down"></i></a>
+                  </li> --> 
+                  <li class="nav-item">
+                    <a class="nav-link nav-link-ltr" href="#faq">FAQ</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nav-link-ltr" href="#contact">Contact Us</a>
+                  </li>
+                    <!-- <a class="nav-link nav-link-ltr dropdown-toggle ms-3 carting" href="#" id="cartDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="bi bi-cart"></i> Cart
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-end cart-dropdown" aria-labelledby="cartDropdown" >
+                        
+                        <div class="card-item">
+                            <div class="row middle ms-3">
+                                <div class="col-12">
+                                    <p>Shopping Cart <a href="#" class="removeall">Remove all</a></p>
+                                </div>
+                            </div>
+                        </div> -->
+                    
+                        <!-- Cart Item 1 -->
+                        <!-- <div class="cart-item sizing">
+                            <div class="row middle ms-3">
+                                <div class="col-12 col-md-3">
+                                    <img src="./images/image10.jpg" alt="image10" class="img-fluid">
+                                </div>
+                                <div class="col-12 col-md-3">
+                                    <p class="mb-0">Shampoo</p>
+                                </div>
+                                <div class="col-8 col-md-3">
+                                    <p class="mb-0">
+                                        <button class="btn btn-default btn-circle"><i class="fa-solid fa-circle-plus"></i></button>2 
+                                        <button class="btn btn-default btn-circle"><i class="fa-solid fa-circle-minus"></i></button>
+                                    </p>
+                                </div>
+                                <div class="col-4 col-md-3">
+                                    <div class="price-actions">
+                                        <p class="mb-0">Rs.20.00</p>
+                                        <div class="actions">
+                                            <h6><a href="#">Save for later</a></h6>
+                                            <h6 class="removal"><a href="#">Remove</a></h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                    
+                        <!-- Cart Item 2 -->
+                        <!-- <div class="cart-item sizing">
+                            <div class="row middle ms-3">
+                                <div class="col-12 col-md-3">
+                                    <img src="./images/image09.jpg" alt="image09" class="img-fluid">
+                                </div>
+                                <div class="col-12 col-md-3">
+                                    <p class="mb-0">Soap</p>
+                                </div>
+                                <div class="col-8 col-md-3">
+                                    <p class="mb-0">
+                                        <button class="btn btn-default btn-circle"><i class="fa-solid fa-circle-plus"></i></button> 1
+                                        <button class="btn btn-default btn-circle"><i class="fa-solid fa-circle-minus"></i></button>
+                                    </p>
+                                </div>
+                                <div class="col-4 col-md-3">
+                                    <div class="price-actions">
+                                        <p class="mb-0">Rs.15.00</p>
+                                        <div class="actions">
+                                            <h6><a href="#">Save for later</a></h6>
+                                            <h6 class="removal"><a href="#">Remove</a></h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                    
+                        <!-- Cart Item 3 -->
+                        <!-- <div class="cart-item sizing">
+                            <div class="row middle ms-3">
+                                <div class="col-12 col-md-3">
+                                    <img src="./images/image08.jpg" alt="image08" class="img-fluid">
+                                </div>
+                                <div class="col-12 col-md-3">
+                                    <p class="mb-0">Salt</p>
+                                </div>
+                                <div class="col-8 col-md-3">
+                                    <p class="mb-0">
+                                        <button class="btn btn-default btn-circle"><i class="fa-solid fa-circle-plus"></i></button> 3
+                                        <button class="btn btn-default btn-circle"><i class="fa-solid fa-circle-minus"></i></button>
+                                    </p>
+                                </div>
+                                <div class="col-4 col-md-3">
+                                    <div class="price-actions">
+                                        <p class="mb-0">Rs.30.00</p>
+                                        <div class="actions">
+                                            <h6><a href="#">Save for later</a></h6>
+                                            <h6 class="removal"><a href="#">Remove</a></h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                    
+                        <!-- Cart Subtotal -->
+                        <!-- <div class="card-item sizing" id="lineing">
+                            <div class="row middle">
+                                <div class="col-6 col-md-6">
+                                    <p class="mt-0">Sub-Total</p>
+                                </div>
+                                <div class="col-6 col-md-6 rupees">
+                                    <p class="mt-0">Rs. 65.00</p>
+                                </div>
+                            </div>
+                            <div class="row middle">
+                                <div class="col-12 bigone">
+                                    <button class="btn btn-block">Checkout</button>
+                                </div>
+                            </div>
+                        </div> -->
+                    <!-- </div> -->
+                <!-- </li> -->
+                <li>
+                    <button type="button" id="btn" class="rounded-corners button" href="#">Get Started</button>
+                </li>
+            </ul> 
+             </div>
+          </nav>
+        </header>
+
+<body>
+    <div class="container">
+        <div class="row" id="#homepage">
+            <div class="col-sm-12 col-md-6 col-lg-6 contents">
+                    <h1>Bettter digital experience with NineStars team</h1>
+                    <h5>We are a team of talented designers making Websites With Bootstrap</h5>
+                    <button type="button" class="btn rounded-corners getstartedbutton"><b>Get Started</b></button>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-6">
+                <img src="./images/image2.svg" alt="image2" class="responsive">
+            </div>
+        </div>
+    </div> 
+
+
+    <!-- second content starts -->
+
+    <section class="section_all bg-light" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section_title_all text-center">
+                        <h3 class="font-weight-bold">Welcome To <span class="text-custom">NineStars Website</span></h3>
+                        <p class="section_subtitle mx-auto text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br/>Lorem Ipsum has been the industry's standard dummy text.</p>
+                        <div class="">
+                            <i class=""></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row vertical_content_manage mt-5">
+                <div class="col-lg-6">
+                    <div class="about_header_main mt-3">
+                        <div class="about_icon_box">
+                            <p class="text_custom font-weight-bold">Lorem Ipsum is simply dummy text</p>
+                        </div>
+                        <h4 class="about_heading text-capitalize font-weight-bold mt-4">Lorem Ipsum is simply dummy text of the printing industry.</h4>
+                        <p class="text-muted mt-3">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+
+                        <p class="text-muted mt-3"> Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="img_about mt-3">
+                        <img src="https://i.ibb.co/qpz1hvM/About-us.jpg" alt="" class="img-fluid mx-auto d-block">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-lg-4">
+                    <div class="about_content_box_all mt-3">
+                        <div class="about_detail text-center">
+                            <div class="about_icon">
+                                <i class="fas fa-pencil-alt"></i>
+                            </div>
+                            <h5 class="text-dark text-capitalize mt-3 font-weight-bold">Creative Design</h5>
+                            <p class="edu_desc mt-3 mb-0 text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="about_content_box_all mt-3">
+                        <div class="about_detail text-center">
+                            <div class="about_icon">
+                                <i class="fab fa-angellist"></i>
+                            </div>
+                            <h5 class="text-dark text-capitalize mt-3 font-weight-bold">We make Best Result</h5>
+                            <p class="edu_desc mb-0 mt-3 text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="about_content_box_all mt-3">
+                        <div class="about_detail text-center">
+                            <div class="about_icon">
+                                <i class="fas fa-paper-plane"></i>
+                            </div>
+                            <h5 class="text-dark text-capitalize mt-3 font-weight-bold">best platform </h5>
+                            <p class="edu_desc mb-0 mt-3 text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <section id="webbs">
+        <div class="container">
+            <div class="row">
+                <section id="promotion">
+                    <h3>Portfolio</h3>
+                    <h1>Check o<span>ut ou</span>r portfolio</h1>
+                </section>
+                <div class="col-sm-12 col-md-6 col-lg-6">
+                    <img src="./images/image1.svg" alt="image1">
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6 dynamics">
+                    <h3>Voluptatem dignissimos provident quasi</h3>
+                    <p>Lorem ipsum dolor sit amet,consectetur adipiscing elit,sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duls aute irure dolor in reprehenderit</p>
+                    <div class="row no-one">
+                        <div class="col-sm-6 col-md-6 col-lg-6">
+                            <i class="fa-regular fa-file-lines"></i>
+                            <h4>Corporis voluptates sit</h4>
+                            <p>consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                        </div>
+                        <div class="col-sm-6 col-md-6 col-lg-6">
+                            <i class="fa-solid fa-cube"></i>
+                            <h4>Ullamco laboris nisi</h4>
+                            <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- second content ends -->
+
+    <!-- fourth task starts -->
+
+    <!-- fourth task ends -->
+
+
+    <!-- second task starts -->
+<!-- <div class="container-fluid">
+        <div class="row">
+            <div class="card col-sm-6">
+                <div class="card-content offset-md-3">
+                    <h3><img src="./images/images/getresponse.png" alt="">GetResponse</h3>
+                    <h2>Create a free account now</h2>
+                    <p>Start for free | No credit card required | Cancel anytime</p>
+                    <form action="#" class="form">
+                        <div class="form-floating mb-4">
+                            <input type="fullname" class="form-control" id="floatingInput" placeholder="fullname@example.com" name="fullname">
+                            <label for="floatingInput">Full Name</label>
+                        </div>
+                        <div class="form-floating mb-4">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="email@example.com" name="email">
+                            <label for="floatingInput">Email</label>
+                        </div>
+                        <div class="form-floating mb-4">
+                            <input type="password" class="form-control" id="floatingPassword" placeholder="password" name="psd">
+                            <label for="floatingPassword">Password</label>
+                        </div>
+                        <div class="form-floating">
+                            <button type="submit" class="rounded-corners btn but">CREATE ACCOUNT</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="anter offset-md-3">
+                    <span>Already have an account? <a href="#">Log in</a></span>
+                    <div class="para">
+                    <p>By clicking "Create account" I accept the <a href="#">Terms of Service</a>, the </p>
+                    <p><a href="#">Anti Spam Policy</a>, and the <a href="#">Privacy Policy. Accessibility info</a></p>
+                </div>
+                </div>
+            </div>
+        
+                    <!-- right side -->
+                    
+                    <!-- <div class="col-sm-6 new par">
+                        <h3 class="gety"><b>Get new subscribers and sales</b></h3>
+                        <h3 style="margin: 0;">with landing pages</h3>
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6 col-lg-6">
+                                
+                                <img src="./src/images/image1.svg" alt="image1" width="25%" class="i1">
+                                <p>More than</p><p><b>200</b></p><p>customizable templates</p>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-6">
+                                    <img src="./src/images/image2.svg" alt="image2" width="38%" class="i2">
+                                    <p>over<p><b>150,000</b></p><p>published landing pages</p></p>
+                            </div>
+                        </div>
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                        <img src="./src/images/image3.svg" alt="image3" width="30%">
+                                        <p>over</p><p><b>230,000,000</b></p><p>landing page visitors</p>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-6">
+                                        <img src="./src/images/image4.svg" alt="image4" width="35%">
+                                        <p>over</p><b>$1,000,000</b></p><p>generated revenue</p>
+                                    </div>
+                            </div>  
+                        </div>
+                    </div>
+        </div> -->
+    <!-- </div> -->
+
+    <!-- second task ends -->
+
+    <!-- task 4 starts -->
+    <section class="table-container" id="team">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <div class="table-responsive">
+                        <table class="table table-borderless">
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="col-1">S.no</th>
+                                    <th scope="col" class="col-2">First name</th>
+                                    <th scope="col" class="col-2">Last name</th>
+                                    <th scope="col" class="col-2">Location</th>
+                                    <th scope="col" class="col-1">Age</th>
+                                    <th scope="col" class="col-1">Gender</th>
+                                    <th scope="col" class="col-1">Handle</th>
+                                    <th scope="col" class="col-2 action-col">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row" class="col-1">1</th>
+                                    <td class="col-2"><a href="#">Mark</a></td>
+                                    <td class="col-2">otto</td>
+                                    <td class="col-2"><a href="https://www.google.com/maps/place/United+States/@35.6861015,-117.0163646,4z/data=!3m1!4b1!4m6!3m5!1s0x54eab584e432360b:0x1c3bb99243deb742!8m2!3d37.09024!4d-95.712891!16zL20vMDljN3cw?entry=ttu" target="_blank">America</a> <i class="fa-solid fa-location-dot"></i></td>
+                                    <td class="col-1">34</td>
+                                    <td class="col-1">Male</td>
+                                    <td class="col-1">@mdo</td>
+                                    <td class="col-2 hover action-col"><a class="icon-link" href="#"><span class="icon"><i class="fa-solid fa-pen"></i></span><span class="text">edit!</span></a>&nbsp;&nbsp;
+                                        <a href="#" class="icon-link"><span class="icon"><i class="fa-regular fa-trash-can"></i></span><span class="text">remove!</span></a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="col-1">2</th>
+                                    <td class="col-2"><a href="#">Jacob</a></td>
+                                    <td class="col-2">Thronton</td>
+                                    <td class="col-2"><a href="https://www.google.com/maps/place/Australia/@-3.9767512,51.6982174,3z/data=!3m1!4b1!4m6!3m5!1s0x2b2bfd076787c5df:0x538267a1955b1352!8m2!3d-25.274398!4d133.775136!16zL20vMGNoZ2h5?entry=ttu" target="_blank">Australia</a> <i class="fa-solid fa-location-dot"></i></td>
+                                    <td class="col-1">36</td>
+                                    <td class="col-1">Male</td>
+                                    <td class="col-1">@rot</td>
+                                    <td class="col-2 hover action-col"><a class="icon-link" href="#"><span class="icon"><i class="fa-solid fa-pen"></i></span><span class="text">edit!</span></a>&nbsp;&nbsp;
+                                        <a href="#" class="icon-link"><span class="icon"><i class="fa-regular fa-trash-can"></i></span><span class="text">remove!</span></a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="col-1">3</th>
+                                    <td class="col-2"><a href="#">Larry</a></td>
+                                    <td class="col-2">TheBird</td>
+                                    <td class="col-2"><a href="https://www.google.com/maps/place/Afghanistan/@33.8298997,62.4106086,6z/data=!3m1!4b1!4m6!3m5!1s0x38d16eb6f8ff026d:0xf3b5460dbe96da78!8m2!3d33.93911!4d67.709953!16zL20vMGpkZA?entry=ttu" target="_blank">Afghanistan</a> <i class="fa-solid fa-location-dot"></i></td>
+                                    <td class="col-1">35</td>
+                                    <td class="col-1">Male</td>
+                                    <td class="col-1">@swt</td>
+                                    <td class="col-2 hover action-col"><a class="icon-link" href="#"><span class="icon"><i class="fa-solid fa-pen"></i></span><span class="text">edit!</span></a>&nbsp;&nbsp;
+                                        <a href="#" class="icon-link"><span class="icon"><i class="fa-regular fa-trash-can"></i></span><span class="text">remove!</span></a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="col-1">4</th>
+                                    <td class="col-2"><a href="#">Mary</a></td>
+                                    <td class="col-2">TheButter</td>
+                                    <td class="col-2"><a href="https://www.google.com/maps/place/Antarctica/@-75.05435,0,3z/data=!3m1!4b1!4m6!3m5!1s0xa4b9967b3390754b:0x6e52be1f740f2075!8m2!3d-75.250973!4d-0.071389!16s%2Fm%2F06wc8yw?entry=ttu" target="_blank">Antartica</a> <i class="fa-solid fa-location-dot"></i></td>
+                                    <td class="col-1">30</td>
+                                    <td class="col-1">Female</td>
+                                    <td class="col-1">@aot</td>
+                                    <td class="col-2 hover action-col"><a class="icon-link" href="#"><span class="icon"><i class="fa-solid fa-pen"></i></span><span class="text">edit!</span></a>&nbsp;&nbsp;
+                                        <a href="#" class="icon-link"><span class="icon"><i class="fa-regular fa-trash-can"></i></span><span class="text">remove!</span></a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="col-1">5</th>
+                                    <td class="col-2"><a href="#">Lawra</a></td>
+                                    <td class="col-2">Begum</td>
+                                    <td class="col-2"><a href="https://www.google.com/maps/search/?api=1&parameters" target="_blank">India</a> <i class="fa-solid fa-location-dot"></i></td>
+                                    <td class="col-1">29</td>
+                                    <td class="col-1">Female</td>
+                                    <td class="col-1">@iot</td>
+                                    <td class="col-2 hover action-col"><a class="icon-link" href="#"><span class="icon"><i class="fa-solid fa-pen"></i></span><span class="text">edit!</span></a>&nbsp;&nbsp;
+                                        <a href="#" class="icon-link"><span class="icon"><i class="fa-regular fa-trash-can"></i></span><span class="text">remove!</span></a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="col-1">6</th>
+                                    <td class="col-2"><a href="#">Tamrind</a></td>
+                                    <td class="col-2">Leaf</td>
+                                    <td class="col-2"><a href="https://www.google.com/maps/search/?api=1&parameters" target="_blank">India</a> <i class="fa-solid fa-location-dot"></i></td>
+                                    <td class="col-1">27</td>
+                                    <td class="col-1">Female</td>
+                                    <td class="col-1">@kot</td>
+                                    <td class="col-2 hover action-col"><a class="icon-link" href="#"><span class="icon"><i class="fa-solid fa-pen"></i></span><span class="text">edit!</span></a>&nbsp;&nbsp;
+                                        <a href="#" class="icon-link"><span class="icon"><i class="fa-regular fa-trash-can"></i></span><span class="text">remove!</span></a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="col-1">7</th>
+                                    <td class="col-2"><a href="#">Jacob</a></td>
+                                    <td class="col-2">Thronton</td>
+                                    <td class="col-2"><a href="https://www.google.com/maps/place/Australia/@-3.9767512,51.6982174,3z/data=!3m1!4b1!4m6!3m5!1s0x2b2bfd076787c5df:0x538267a1955b1352!8m2!3d-25.274398!4d133.775136!16zL20vMGNoZ2h5?entry=ttu" target="_blank">Australia</a> <i class="fa-solid fa-location-dot"></i></td>
+                                    <td class="col-1">36</td>
+                                    <td class="col-1">Male</td>
+                                    <td class="col-1">@rot</td>
+                                    <td class="col-2 hover action-col"><a class="icon-link" href="#"><span class="icon"><i class="fa-solid fa-pen"></i></span><span class="text">edit!</span></a>&nbsp;&nbsp;
+                                        <a href="#" class="icon-link"><span class="icon"><i class="fa-regular fa-trash-can"></i></span><span class="text">remove!</span></a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="col-1">8</th>
+                                    <td class="col-2"><a href="#">Jacob</a></td>
+                                    <td class="col-2">Livinston</td>
+                                    <td class="col-2"><a href="https://www.google.com/maps/place/Belgium/@50.4953511,3.146924,8z/data=!3m1!4b1!4m6!3m5!1s0x47c17d64edf39797:0x47ebf2b439e60ff2!8m2!3d50.503887!4d4.469936!16zL20vMDE1NGo?entry=ttu" target="_blank">belgium</a> <i class="fa-solid fa-location-dot"></i></td>
+                                    <td class="col-1">39</td>
+                                    <td class="col-1">Male</td>
+                                    <td class="col-1">@jot</td>
+                                    <td class="col-2 hover action-col"><a class="icon-link" href="#"><span class="icon"><i class="fa-solid fa-pen"></i></span><span class="text">edit!</span></a>&nbsp;&nbsp;
+                                        <a href="#" class="icon-link"><span class="icon"><i class="fa-regular fa-trash-can"></i></span><span class="text">remove!</span></a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="col-1">9</th>
+                                    <td class="col-2"><a href="#">Hacomb</a></td>
+                                    <td class="col-2">Threaten</td>
+                                    <td class="col-2"><a href="https://www.google.com/maps/place/New+Zealand/@-38.9080451,153.7704749,4z/data=!3m1!4b1!4m6!3m5!1s0x6d2c200e17779687:0xb1d618e2756a4733!8m2!3d-40.900557!4d174.885971!16zL20vMGN0d19i?entry=ttu" target="_blank">Newzeland</a> <i class="fa-solid fa-location-dot"></i></td>
+                                    <td class="col-1">31</td>
+                                    <td class="col-1">Male</td>
+                                    <td class="col-1">@qst</td>
+                                    <td class="col-2 hover action-col"><a class="icon-link" href="#"><span class="icon"><i class="fa-solid fa-pen"></i></span><span class="text">edit!</span></a>&nbsp;&nbsp;
+                                        <a href="#" class="icon-link"><span class="icon"><i class="fa-regular fa-trash-can"></i></span><span class="text">remove!</span></a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="col-1">10</th>
+                                    <td class="col-2"><a href="#">Dacob</a></td>
+                                    <td class="col-2">Thomson</td>
+                                    <td class="col-2"><a href="https://www.google.com/maps/place/Argentina/@-36.4574895,-84.9058458,4z/data=!3m1!4b1!4m6!3m5!1s0x95bccaf5f5fdc667:0x3d2f77992af00fa8!8m2!3d-38.416097!4d-63.616672!16zL20vMGpnZA?entry=ttu" target="_blank">Argentina</a> <i class="fa-solid fa-location-dot"></i></td>
+                                    <td class="col-1">35</td>
+                                    <td class="col-1">Male</td>
+                                    <td class="col-1">@znt</td>
+                                    <td class="col-2 hover action-col"><a class="icon-link" href="#"><span class="icon"><i class="fa-solid fa-pen"></i></span><span class="text">edit!</span></a>&nbsp;&nbsp;
+                                        <a href="#" class="icon-link"><span class="icon"><i class="fa-regular fa-trash-can"></i></span><span class="text">remove!</span></a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+
+
+    <!-- task 4 ends -->
+
+    <!-- task 3 starts -->
+
+<section id="cardhover">
+    <section>
+        <h3>Services</h3>
+    </section>
+    <section>
+        <h1>Check out the gr<span>eat </span> services we offer</h1>
+    </section>
+    <section class="cards">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="card">
+                    <i class="fa-solid fa-basketball"></i>
+                    <h5>Lorem ipsum</h5>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita minus recusandae quos minima consequatur voluptatem dignissimos, commodi alias vero facere magnam nobis. Blanditiis laboriosam, reiciendis recusandae iste magnam cupiditate illum.</p>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="card">
+                    <i class="fa-solid fa-file-contract"></i>
+                    <h5>Sed ut perspiciatis</h5>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita minus recusandae quos minima consequatur voluptatem dignissimos, commodi alias vero facere magnam nobis. Blanditiis laboriosam, reiciendis recusandae iste magnam cupiditate illum.</p>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="card">
+                    <i class="fa-solid fa-gauge-high"></i>
+                    <h5>Magni Dolores</h5>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita minus recusandae quos minima consequatur voluptatem dignissimos, commodi alias vero facere magnam nobis. Blanditiis laboriosam, reiciendis recusandae iste magnam cupiditate illum.</p>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="card">
+                    <i class="fa-solid fa-earth-americas"></i>
+                    <h5>Nemo Enim</h5>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita minus recusandae quos minima consequatur voluptatem dignissimos, commodi alias vero facere magnam nobis. Blanditiis laboriosam, reiciendis recusandae iste magnam cupiditate illum.</p>
+                </div>
+            </div>
+            <a href="#" class="whatsapp"><i class="fa-brands fa-whatsapp my-float"></i></a>
+        </div>
+</section>
+</section>
+
+    <!-- task 3 ends -->
+
+    <!-- task 4 starts -->
+    
+    <!-- faq section starts -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-title">
+                <h5>FAQ</h5>
+                <h2>Frequently Asked Questions</h2>
+                <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed congue arcu, in et dignissim quam condimentum vel.</p> -->
+            </div>
+
+            <div class="accordion">
+              <div class="card">
+                  <div class="card-header">
+                      <h3>How can i participate the ico token sale?</h3>
+                      <span class="fa-solid fa-chevron-down"></span>
+                  </div>
+                  <div class="card-body">
+                      <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
+                  </div>
+              </div>
+      
+              <div class="card">
+                  <div class="card-header">
+                      <h3>What is ICO crypto?</h3>
+                      <span class="fa-solid fa-chevron-up"></span>
+                  </div>
+                  <div class="card-body">
+                      <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
+                  </div>
+              </div>
+      
+              <div class="card">
+                  <div class="card-header">
+                      <h3>How do I benefit from ICO Token?</h3>
+                      <span class="fa-solid fa-chevron-up"></span>
+                  </div>
+                  <div class="card-body">
+                      <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
+                  </div>
+              </div>
+      
+              <div class="card">
+                  <div class="card-header">
+                      <h3>How can I purchase bitcoin?</h3>
+                      <span class="fa-solid fa-chevron-up"></span>
+                  </div>
+                  <div class="card-body">
+                      <p>Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.</p>
+                  </div>
+              </div>
+          </div>
+           
+        </div>
+    </section>
+
+
+    
+
+      <!-- faq section ends -->
+    
+      <section class="contact-sec sec-pad" id="contact">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="contact-detail">
+                <h1 class="section-title">Contact us</h1>
+      
+                <ul class="contact-ul">
+                  <li><i class="fa fa-location-dot"></i> 86, ninestars street, NineStar city, Qatar</li>
+      
+                  <li>
+                    <i class="fa fa-phone"></i>
+                    <a href="tel:08510004495"><b>0789000XXXX</b></a>,
+                    <a href="tel:08510005495"><b>0321400XXXX</b></a>
+                  </li>
+      
+                  <li>
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:pardeepkumar4bjp@gmail.com"><b>ninestars@gmail.com</b></a>
+                  </li>
+                </ul>
+      
+                <span>
+                  <a href="#" class="fb"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="#" class="insta"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#" class="twitter"><i class="fa-brands fa-twitter"></i></a>
+                </span>
+              </div>
+            </div>
+      
+            <div class="col-md-6">
+              <form action="#" class="contFrm" method="POST">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <input type="text" name="name" placeholder="Your Name" class="inptFld" required />
+                  </div>
+      
+                  <div class="col-sm-6">
+                    <input type="email" name="email" placeholder="Email Address" class="inptFld" required />
+                  </div>
+      
+                  <div class="col-sm-6">
+                    <input type="tel" name="phone" placeholder="Phone Number" class="inptFld" required />
+                  </div>
+      
+                  <div class="col-sm-6">
+                    <input type="text" name="sub" placeholder="Subject" class="inptFld" required />
+                  </div>
+      
+                  <div class="col-12">
+                    <textarea class="inptFld" rows="" cols="" placeholder="Your Message..." required></textarea>
+                  </div>
+      
+                  <div class="col-12">
+                    <input type="submit" name="submit" value="SUBMIT" class="inptBtn" />
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+      
+          <div style="text-align: center; margin-top: 20px;">
+            <p> Copyright &copy;
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              All rights reserved | NineStars
+            </p>
+          </div>
+      
+        </div>
+      </section>
+
+
+
+    <!-- task 4 ends -->
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+       $(document).ready(function () {
+    $(".card-header").click(function () {
+        var cardBody = $(this).next(".card-body");
+        var icon = $(this).children("span");
+
+        if (cardBody.is(":visible")) {
+            cardBody.slideUp();
+            icon.removeClass("fa-chevron-up").addClass("fa-chevron-down");
+        } else {
+            $(".card .card-body").slideUp();
+            $(".card .card-header span").removeClass("fa-chevron-up").addClass("fa-chevron-down");
+            cardBody.slideDown();
+            icon.removeClass("fa-chevron-down").addClass("fa-chevron-up");
+        }
+    });
+});
+
+    </script>
+</body>
+</html>
